@@ -1,0 +1,271 @@
+/*|#MakVie-SAinte|*/
+
+/*-----------------------------------*\
+  #VARIABLE CSS
+\*-----------------------------------*/
+
+:root {
+
+  /* coleurs */
+
+  --couleur-primaire: #d78c00;
+  --couleur-primaire-100: #c9870c;
+  --couleur-primaire-200: #b36800;
+  --couleur-secondaire: #002c85;
+  --couleur-secondaire-100: #0a2969;
+  --couleur-secondaire-200: #001f5e;
+
+  --couleur-noire: #000000;
+  --couleur-blanche: #ffffff;
+  --couleur-lumier: #f1f6f7;
+  --couleur-sombre: #00020c;
+  --couleur-sombre-100: #273E47;
+
+  --couleur-gris: #63717d;
+  --couleur-gris-100: #434d57;
+
+  /* typographie */
+
+  --police-primaire: "titillium web";
+  --police-secondaire: "poppins";
+
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+
+  --weight-200: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+
+  --padding-g: 0px 35px;
+
+  /* border-radius */
+
+  --border-radius-md: 9px;
+  --border-radius-sm: 5px;
+
+  /* transition */
+
+  --transition-33: 0.33s ease-in-out;
+  --transition-66: 0.66s ease-in-out;
+  --transition-1s: 1s ease-in-out;
+  --transition-timing: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+  font-weight: var(--weight-400);
+  font-family: "poppins", sans-serif, system-ui !important;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-sombre);
+  overflow-x: hidden !important;
+}
+
+::selection {
+  background-color: var(--couleur-primaire);
+  color: var(--couleur-blanche);
+}
+
+/*-----------------------------------*\
+  #OVERLAY
+\*-----------------------------------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-33);
+  z-index: 300 !important;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*-----------------------------------*\
+  #COMPOSANTS GENERAL
+\*-----------------------------------*/
+
+/* Bouton primaire */
+
+button.btn-primary {
+  text-align: center;
+  font-size: var(--fs-6);
+  font-weight: var(--weight-700);
+  color: var(--couleur-blanche);
+  background-color: var(--couleur-primaire);
+  border: 1px solid var(--couleur-primaire);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-33);
+  padding: 17px 27px;
+  margin-right: 30px;
+}
+
+button.btn-primary:hover {
+  color: var(--couleur-blanche);
+  background-color: var(--couleur-primaire-200);
+  border-color: var(--couleur-primaire-200);
+}
+
+button.btn-primary:focus {
+  outline: blue;
+}
+
+/* Bouton secondaire */
+
+button.btn-secondary {
+  text-align: center;
+  font-size: var(--fs-6);
+  font-weight: var(--weight-700);
+  color: var(--couleur-blanche);
+  background-color: transparent;
+  border: 1px solid var(--couleur-blanche);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition-33);
+  padding: 17px 27px;
+  margin-right: 30px;
+}
+
+button.btn-secondary:hover {
+  color: var(--couleur-primaire);
+  background-color: var(--couleur-blanche);
+  border-color: var(--couleur-blanche);
+}
+
+
+/* Titre Haut des sections */
+
+.titre-g {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: darkturquoise; */
+}
+
+.titre-g.cote {
+  align-items: start;
+}
+
+.titre-g div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.titre-g i {
+  color: var(--couleur-primaire);
+  font-size: var(--fs-1);
+}
+
+.titre-g span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--couleur-sombre-100);
+  font-size: var(--fs-2);
+  font-weight: var(--weight-400);
+}
+
+.titre-g span.blanc {
+  color: var(--couleur-blanche);
+}
+
+.titre-g h1.my-titre {
+  text-align: center;
+  line-height: 1.1;
+  color: var(--couleur-sombre-100);
+  font-size: 47px;
+  font-family: var(--police-primaire);
+  margin-bottom: 30px;
+}
+
+.titre-g h1.my-titre.blanc {
+  color: var(--couleur-blanche);
+}
+
+.titre-g.cote h1.my-titre {
+  text-align: left;
+}
+
+/* Les Titres des Sections */
+
+.my-titre {
+  line-height: 1.1;
+  color: var(--couleur-sombre-100);
+  font-size: 47px;
+  font-family: var(--police-primaire);
+  margin-bottom: 18px;
+}
+
+
+/* Paragraph */
+
+.my-paragraph {
+  line-height: 1.6;
+  color: var(--couleur-gris-100);
+  font-size: var(--fs-5);
+  font-family: var(--police-secondaire);
+  font-weight: var(--weight-500);
+  margin-bottom: 28px;
+}
+
+/* Section general */
+
+section.section {
+  padding: 90px 10px;
+}
+
+/* 925DEV */

@@ -1,0 +1,259 @@
+/*|#MakVie-SAinte|*/
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+header {
+  width: 100%;
+  height: max-content;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+header .top-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--couleur-primaire) !important;
+  padding: var(--padding-g);
+}
+
+header .top-header .bloc {
+  width: 33, 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .top-header .bloc.adresse .bloc-txt address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+header .top-header .bloc i {
+  font-size: 20px;
+  color: var(--couleur-blanche);
+  margin-right: 10px;
+}
+
+header .top-header .bloc .bloc-txt,
+header .top-header .bloc .bloc-txt a,
+header .top-header .bloc .bloc-txt address {
+  font-size: var(--fs-7);
+  font-family: var(--police-primaire);
+  font-weight: var(--weight-500);
+  font-style: normal;
+  color: var(--couleur-blanche);
+  transition: var(--transition-33);
+}
+
+header .top-header .bloc.reseaux a i {
+  transition: var(--transition-33);
+}
+
+header .top-header .bloc .bloc-txt a:hover,
+header .top-header .bloc.reseaux a:hover i,
+header .top-header .bloc .bloc-txt address:hover {
+  color: var(--couleur-lumier);
+}
+
+header .top-header .bloc:last-child .bloc-txt {
+  margin-right: 10px;
+}
+
+
+/* Navigation */
+.navigation-phone {
+  /* Nav Phone */
+  display: none;
+  visibility: hidden;
+}
+
+.navigation-desktop,
+.navigation-phone {
+  width: 100%;
+}
+
+.navigation-desktop nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-g);
+}
+
+nav.desktop .bloc {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: var(--padding-g);
+}
+
+nav.desktop .bloc .lien-nav a,
+.navlinks-container a {
+  display: inline-block;
+  position: relative;
+  color: var(--couleur-secondaire-200);
+  font-size: var(--fs-4);
+  font-weight: var(--weight-700);
+  font-family: var(--police-primaire);
+  padding: 0px 10px;
+}
+
+nav.desktop .bloc .lien-nav a::after,
+.navlinks-container a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  width: 40%;
+  height: 3px;
+  background: var(--couleur-primaire);
+  border-radius: 3000000px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-33);
+}
+
+nav.desktop .bloc .lien-nav a:hover::after,
+.navlinks-container a:hover::after,
+nav.desktop .bloc .lien-nav a:focus::after,
+.navlinks-container a:focus::after {
+  transform: scaleX(1);
+  transition: width 6s ease-in-out;
+}
+
+nav.desktop .bloc .info-telephone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.desktop .bloc .info-telephone i {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--couleur-primaire);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--couleur-blanche);
+}
+
+nav.desktop .bloc .info-telephone .bloc-txt {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+nav.desktop .bloc .info-telephone .bloc-txt span,
+nav.desktop .bloc .info-telephone .bloc-txt span a {
+  font-size: var(--fs-5);
+  font-family: var(--police-primaire);
+  font-weight: var(--weight-500);
+  line-height: 1.2;
+  color: var(--couleur-secondaire-200);
+}
+
+nav.desktop .bloc .info-telephone .bloc-txt span:first-child {
+  font-weight: bolder !important;
+  font-size: var(--fs-4);
+}
+
+
+/* Nav phone */
+.navigation-phone {
+  display: block !important;
+  width: 100%;
+  height: max-content;
+  background-color: var(--couleur-lumier);
+  visibility: visible !important;
+  padding: 0px !important;
+  margin: 0 !important;
+}
+
+nav.phone {
+  position: fixed;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--couleur-blanche);
+  padding: 5px var(--padding-g);
+  margin: 0 !important;
+  display: none;
+  z-index: 1000000;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* Container Image Accueil */
+.container-img-accueil {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: darkblue;
+  background-image: url("../images/accueil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 0px 0px 100px !important;
+  margin: 0 !important;
+}
+
+.container-img-accueil .style-pres-txt {
+  width: 600px;
+}
+
+.container-img-accueil .style-pres-txt .haut-titre {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.container-img-accueil .style-pres-txt .haut-titre i {
+  color: var(--couleur-primaire);
+  font-size: var(--fs-1);
+}
+
+.container-img-accueil .style-pres-txt .haut-titre span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--couleur-blanche);
+  font-weight: var(--weight-800);
+}
+
+.container-img-accueil .style-pres-txt h1 {
+  color: var(--couleur-blanche);
+  font-size: 65px;
+  font-family: var(--police-primaire);
+  font-weight: bolder;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.container-img-accueil .style-pres-txt p {
+  color: var(--couleur-blanche);
+  font-size: var(--fs-4);
+  margin-bottom: 30px;
+}
+
+/* 925DEV */

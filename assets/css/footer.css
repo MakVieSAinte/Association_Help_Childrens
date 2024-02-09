@@ -1,0 +1,46 @@
+/*|#MakVie-SAinte|*/
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--couleur-lumier);
+  padding: 30px 80px 32px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer a {
+  color: var(--couleur-primaire);
+  font-weight: var(--weight-600);
+}
+
+footer .reseaux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--couleur-primaire) !important;
+  font-size: var(--fs-1);
+  gap: 20px;
+}
+
+footer a {
+  transition: var(--transition-33);
+}
+
+footer a:hover {
+  color: var(--couleur-secondaire);
+}
+
+footer p>a:hover {
+  text-decoration: underline;
+}
+
+/* 925DEV */

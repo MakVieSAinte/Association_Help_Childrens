@@ -1,0 +1,598 @@
+/*|#MakVie-SAinte|*/
+
+@import url('styles.css');
+
+/*-----------------------------------*\
+  #SECTION 1
+\*-----------------------------------*/
+
+.section.un {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section.un .card {
+  width: 290px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--couleur-blanche);
+  box-shadow: 0px -1px 7px #cfcfcf;
+  text-align: center;
+  padding: 25px 5px 10px;
+  margin: 2px;
+}
+
+.section.un .card img {
+  margin-bottom: 15px;
+}
+
+.section.un .card h3 {
+  color: var(--couleur-gris-100);
+  margin-bottom: 10px;
+}
+
+.section.un .card p {
+  color: var(--couleur-gris);
+  font-size: var(--fs-7);
+}
+
+/*-----------------------------------*\
+  #SECTION 2
+\*-----------------------------------*/
+
+.section.deux {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.section.deux .droit {
+  width: 50%;
+}
+
+.section.deux .gauche {
+  width: 40%;
+}
+
+.section.deux .gauche img {
+  width: 100% !important;
+}
+
+.section.deux .bloc-bas-link {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.section.deux .bloc-bas-link ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--fs-4);
+  font-weight: var(--weight-500);
+  color: var(--couleur-secondaire-200);
+}
+
+.section.deux .bloc-bas-link ul li span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--couleur-primaire);
+  margin-right: 5px;
+}
+
+/*-----------------------------------*\
+  #SECTION 3
+\*-----------------------------------*/
+
+.section.trois {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  background-color: var(--couleur-lumier);
+}
+
+.section.trois .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  background-color: var(--couleur-lumier);
+}
+
+.section.trois .card {
+  width: 320px;
+  height: 470px;
+  background-color: var(--couleur-blanche);
+}
+
+.section.trois .card .top {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.section.trois .card .top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section.trois .card .top .etiquette {
+  position: absolute;
+  bottom: -17px;
+  width: max-content;
+  color: var(--couleur-blanche);
+  font-family: var(--police-primaire);
+  font-weight: var(--weight-900);
+  background-color: var(--couleur-primaire);
+  padding: 6px 20px;
+}
+
+.section.trois .card .centre {
+  height: 45%;
+  padding: 40px 18px 15px;
+}
+
+.section.trois .card .centre h3 {
+  font-size: var(--fs-5);
+  color: var(--couleur-primaire);
+  padding-bottom: 15px;
+}
+
+.section.trois .card .centre p {
+  color: var(--couleur-gris-100);
+  font-size: var(--fs-5);
+  font-family: var(--police-secondaire);
+  font-weight: var(--weight-500);
+  padding-bottom: 15px;
+}
+
+.section.trois .card .circular {
+  position: relative;
+  width: 100%;
+  background-color: var(--couleur-lumier);
+  padding: 0;
+}
+
+.section.trois .card .circular .bar {
+  position: relative;
+  width: 150px;
+  height: 10px;
+  background: conic-gradient(from 0deg,
+      var(--couleur-primaire) 0%,
+      var(--couleur-primaire) 0% 95%,
+      #333 95%,
+      #333 100%);
+}
+
+.section.trois .card .bas {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: var(--weight-500);
+  padding: 2px 18px 15px;
+}
+
+.section.trois .p-caree {
+  text-align: center;
+  border: 1px solid var(--couleur-primaire);
+  padding: 19px 38px;
+  margin-top: 30px;
+}
+
+.section.trois .p-caree a {
+  color: var(--couleur-primaire);
+  text-decoration: underline;
+}
+
+/*-----------------------------------*\
+  #SECTION 4
+\*-----------------------------------*/
+
+.section.quatre {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section.quatre .container-cards {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.section.quatre .container-cards .card {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--couleur-blanche);
+  box-shadow: 2px -1px 5px #d7d7d7;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section.quatre .container-cards .card .droit {
+  width: 40%;
+  height: 100%;
+}
+
+.section.quatre .container-cards .card .droit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section.quatre .container-cards .card .gauche {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 20px 20px 10px;
+}
+
+.section.quatre .container-cards .card .gauche .autre {
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.section.quatre .container-cards .card .gauche div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.section.quatre .container-cards .card .gauche div i {
+  color: var(--couleur-gris);
+  font-size: 20px;
+}
+
+.section.quatre .container-cards .card .gauche div span {
+  color: var(--couleur-primaire);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.section.quatre .container-cards .card .gauche button {
+  color: var(--couleur-blanche);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--couleur-primaire) !important;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  padding: 17px 25px;
+}
+
+.section.quatre .container-cards .card .gauche button:hover {
+  color: var(--couleur-blanche);
+  background-color: var(--couleur-primaire-200) !important;
+  border-color: var(--couleur-primaire-200);
+}
+
+
+/*-----------------------------------*\
+  #SECTION 5
+\*-----------------------------------*/
+
+/* Section pour la Video */
+
+
+/*-----------------------------------*\
+  #SECTION 6
+\*-----------------------------------*/
+
+.section.six {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section.six .cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.section.six .card {
+  width: 550px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section.six .card .droit {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between !important;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.section.six .card .droit i {
+  font-size: 70px;
+  color: var(--couleur-gris-100);
+}
+
+.section.six .card .droit span.my-paragraph {
+  font-size: var(--fs-5);
+  line-height: 1.4;
+}
+
+.section.six .card .droit h1 {
+  color: var(--couleur-primaire);
+  font-family: var(--police-primaire);
+}
+
+.section.six .card .gauche {
+  position: relative;
+  width: 200px !important;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section.six .card .gauche span.inter {
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-color: var(--couleur-primaire);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.section.six .card .gauche span.couvert {
+  position: absolute;
+  right: -200px;
+  display: block;
+  width: 295px;
+  height: 295px;
+  background-color: var(--couleur-gris-100);
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+
+/*-----------------------------------*\
+  #SECTION 7
+\*-----------------------------------*/
+
+.section.sept {
+  width: 100%;
+  height: auto;
+}
+
+.section.sept .my-paragraph {
+  color: var(--couleur-blanche);
+}
+
+.section.sept .container {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-image: url('../images/contact.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section.sept .container .droit {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 60px 20px 20px;
+}
+
+.section.sept .container .droit .bas {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section.sept .container .droit .bas i.bi-telephone-plus {
+  height: 100%;
+  font-size: 40px;
+}
+
+.section.sept .container .droit .bas .contact {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 18px;
+}
+
+.section.sept .container .droit .bas .contact span {
+  font-size: 16px;
+  font-weight: var(--weight-700);
+  line-height: 1.1;
+}
+
+.section.sept .container .droit .bas .contact span:first-child {
+  color: var(--couleur-blanche);
+}
+
+.section.sept .container .droit .bas .contact span:last-child {
+  color: var(--couleur-primaire);
+  font-size: 20px;
+}
+
+.section.sept .container .gauche {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.section.sept .container .gauche .container-form {
+  position: absolute;
+  left: -50px;
+  bottom: -100px;
+  width: 400px;
+  height: auto;
+  background-color: var(--couleur-lumier);
+  border-radius: 2px;
+  padding: 45px 16px 60px;
+}
+
+.section.sept .container .gauche .container-form h1 {
+  color: var(--couleur-sombre-100);
+  font-size: 30px;
+  font-family: var(--police-primaire);
+  margin-bottom: 30px;
+}
+
+.section.sept .container-form .inputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section.sept .container-form input {
+  height: 49px;
+  color: var(--couleur-primaire);
+  font-family: var(--police-secondaire);
+  background-color: var(--couleur-blanche);
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+  margin-bottom: 12px;
+}
+
+.section.sept .container-form input::placeholder {
+  color: var(--couleur-gris);
+  font-size: 15px;
+  font-weight: var(--weight-600);
+  font-family: var(--police-primaire);
+}
+
+.section.sept .container-form input:nth-child(1),
+.section.sept .container-form input:nth-child(4),
+.section.sept .container-form input:nth-child(5) {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.section.sept .container-form input:nth-child(2),
+.section.sept .container-form input:nth-child(3) {
+  width: 40%;
+  flex-grow: 1;
+}
+
+.section.sept .container-form input#message {
+  height: 120px;
+  padding-bottom: 70px !important;
+}
+
+.section.sept .container-form button {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--couleur-blanche);
+  font-size: 16px;
+  font-weight: var(--weight-900);
+  font-family: var(--police-primaire);
+  background-color: var(--couleur-primaire);
+  cursor: pointer;
+  transition: var(--transition-33);
+  padding: 17px 10px;
+}
+
+.section.sept .container-form button:hover {
+  background-color: var(--couleur-primaire-200);
+}
+
+.bande {
+  width: 60%;
+  height: 100px;
+  background-color: var(--couleur-primaire);
+}
+
+/*-----------------------------------*\
+  #SECTION 8
+\*-----------------------------------*/
+
+.section.huit .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section.huit .container .gauche {
+  width: 700px;
+  padding: var(--padding-g);
+}
+
+.section.huit .container .droit {
+  width: max-content;
+}
+
+.section.huit .container .droit img {
+  width: 100%;
+}
+
+/* 925DEV */

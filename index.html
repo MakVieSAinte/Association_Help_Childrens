@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" translate="yes">
+  <head>
+    <!-- ==== Meta données ==== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <!-- ==== Theme couleur ==== -->
+    <meta name="theme-color" content="#c9870c" />
+    <meta name="msapplication-TileColor" content="#c9870c" />
+    <!-- ==== Meta ogg pour le partage ==== -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="ASSOCIATION D'AIDE AUX ENFANTS" />
+    <meta property="og:image" content="./assets/images/accueil.png" />
+    <meta property="og:title" content="ASSOCIATION HELP CHILDREN's" />
+    <meta
+      property="og:description"
+      content="La malnutrition est une réalité préoccupante, mais nous croyons qu'elle est évitable. Notre association s'engage à lutter contre la malnutrition infantile en fournissant une alimentation adéquate,des conseils nutritionnels et des programmes éducatifs aux familles dans le besoin"
+    />
+    <!-- ==== Titre de la page ==== -->
+    <title>HELP CHILDREN'S | Faire un don pour aidez les enfants.</title>
+    <!-- ==== Favicon du site web ==== -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/logo/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/logo/favicon.png"
+    />
+    <!-- ==== import Police d'ecriture & icones ==== -->
+    <link
+      rel="preconnect"
+      type="text/css"
+      href="./assets/import/fonts/fonts.css"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/import/icones/bootstrap-icons.css"
+      crossorigin
+    />
+    <!-- ==== Css fichier (non minifier) ==== -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/chargement.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/sections.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+    <!-- ==== Css fichier (minifier) ==== -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css.min.css"> -->
+  </head>
+
+  <body>
+    <!-- Chargement du site web -->
+    <div class="chargement-container">
+      <div class="load-wrapp">
+        <div class="load-5">
+          <div class="ring-2">
+            <div class="ball-holder">
+              <div class="ball"></div>
+            </div>
+          </div>
+          <br />
+          <p>HELP CHILDREN'S</p>
+        </div>
+      </div>
+    </div>
+    <!-- Script pour le chargement de la page -->
+    <script>
+      const containerChargement = document.querySelector(
+        ".chargement-container"
+      );
+      window.addEventListener("load", (e) => {
+        containerChargement.remove();
+      });
+    </script>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+
+    <!-- Debut du Header -->
+    <header>
+      <!-- Top Header -->
+      <div class="top-header">
+        <div class="bloc adresse">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div class="bloc-txt">
+            <address aria-roledescription="adresse de l'association">
+              Mpaka 120, Avenue pharmacie pascal
+              <span>en diagonale de l'ex boulangerie Epi d'or.</span>
+            </address>
+          </div>
+        </div>
+
+        <!-- Bloc du millieu -->
+        <div class="bloc">
+          <i class="bi bi-envelope-open-fill"></i>
+          <div class="bloc-txt">
+            <span aria-details="Envoyez nous un mail pour plus d'informations">
+              <a href="mailto:associationhelpchildren@gmail.com">
+                associationhelpchildren@gmail.com
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Bloc reseaux -->
+        <div class="bloc reseaux">
+          <div class="bloc-txt">
+            <span>Suivez-nous : </span>
+          </div>
+          <a href="http://facebook.com/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="http://twitter.com/" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="http://linkedin.com/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="http://instagram.com/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Desktop -->
+      <div class="navigation-desktop">
+        <nav class="desktop">
+          <a href="./index.html">
+            <img
+              src="./assets/images/logo/Help logo_4.png"
+              alt="logo help childrens"
+              width="210px"
+            />
+          </a>
+
+          <!-- Lien de navigation -->
+          <div class="bloc lien">
+            <div class="lien-nav">
+              <a href="./index.html" aria-current="page">Accueil</a>
+              <a href="#apropos">À propos</a>
+              <a href="#faitedon">Faire un don</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+
+          <div class="bloc">
+            <div class="info-telephone">
+              <i class="bi bi-telephone-inbound-fill"></i>
+              <div class="bloc-txt">
+                <span>Disponible 24 / 7</span>
+                <span
+                  ><a href="tel:+242 06 766 44 59">+242 06 766 44 59</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Navigation Phone -->
+      <div class="navigation-phone">
+        <nav class="phone">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo/Help logo_4.png"
+              alt="logo help children"
+              width="200px"
+            />
+          </a>
+
+          <div class="main-navlinks">
+            <button
+              class="hamburger"
+              type="button"
+              aria-label="Icone Responsive pour le menu de navigation"
+              aria-expanded="false"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="navlinks-container">
+              <a href="#" aria-current="page">Accueil</a>
+              <a href="#apropos">À propos</a>
+              <a href="#faitedon">Faire un don</a>
+              <a href="#">Contacts</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Container image accueil -->
+      <div class="container-img-accueil">
+        <div class="style-pres-txt">
+          <div class="haut-titre s-header">
+            <i class="bi bi-heart-fill"></i>
+            <span>Levez vos mains pour aider</span>
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h1 class="s-header">
+            Faire un don pour <br />
+            aidez les enfants
+          </h1>
+          <p class="s-header">
+            À travers notre engagement inébranlable, nous œuvrons pour offrir un
+            avenir meilleur à ces jeunes vies.
+          </p>
+          <div class="btns s-header" role="bouton d'action">
+            <button type="button" class="btn-secondary">
+              Contactez-nous <i class="bi bi-arrow-right-short"></i>
+            </button>
+            <button type="button" class="btn-primary">
+              Faire un Don <i class="bi bi-arrow-right-short"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+
+    <!-- Debut du Main -->
+    <main aria-describedby="contenue principale de la page">
+      <!-- Section 1 -->
+      <section class="section un">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="./assets/images/icone_1.png" alt="icone d'illustration" />
+          <h3>Education pour enfants</h3>
+          <p>
+            Sed perspeciatis unde ommis natus tem accntium doleremque laudron.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="./assets/images/icone_2.png" alt="icone d'illustration" />
+          <h3>Insertion sociale</h3>
+          <p>
+            Sed perspeciatis unde ommis natus tem accntium doleremque laudron.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="./assets/images/icone_3.png" alt="icone d'illustration" />
+          <h3>Nutritionnel - Médical - Scolaire</h3>
+          <p>
+            Sed perspeciatis unde ommis natus tem accntium doleremque laudron.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="./assets/images/icone_4.png" alt="icone d'illustration" />
+          <h3>Assistance aux enfants</h3>
+          <p>
+            Sed perspeciatis unde ommis natus tem accntium doleremque laudron.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section deux" id="faitedon">
+        <div class="droit">
+          <div class="titre-g cote">
+            <div>
+              <i class="bi bi-heart-fill"></i>
+              <span> Rejoignez-nous et faite un Don </span>
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h1 class="my-titre">Aider chaque enfant peut Sauver des vies</h1>
+          </div>
+
+          <p class="my-paragraph">
+            La malnutrition est une réalité préoccupante, mais nous
+            croyonsqu'elle est évitable. Notre association s'engage à lutter
+            contre la malnutrition infantile en fournissant une alimentation
+            adéquate,des conseils nutritionnels et des programmes éducatifs aux
+            famillesdans le besoin.
+          </p>
+
+          <div class="bloc-bas-link">
+            <ul>
+              <li><span></span>Faire une santé de qualité</li>
+              <li><span></span>Assistance aux enfants</li>
+              <li><span></span>Éducation à la santé</li>
+            </ul>
+            <ul>
+              <li><span></span>Sensibilisation</li>
+              <li><span></span>Soutien nutritionnel</li>
+              <li><span></span>Insertion sociale</li>
+            </ul>
+          </div>
+          <button type="button" class="btn-primary">
+            Faire un Don maintenant<i class="bi bi-arrow-right-short"></i>
+          </button>
+        </div>
+
+        <div class="gauche">
+          <img src="./assets/images/aidez_enfants.png" alt="image" />
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section trois">
+        <div class="titre-g">
+          <div>
+            <i class="bi bi-heart-fill"></i>
+            <span> Raising Your Helping Han </span>
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h1 class="my-titre">Soyez la raison du sourire de quelqu'un</h1>
+        </div>
+        <div class="container">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="top">
+              <img
+                src="./assets/images/img_card1.png"
+                alt="image d'illustration"
+              />
+              <div class="etiquette">
+                <span>Education</span>
+              </div>
+            </div>
+            <div class="centre" aria-describedby="description">
+              <h3>Diagnostic de detection précoce</h3>
+              <p>
+                Please help us expand our services to reachour diverse
+                communities and perdons of allabilities with.
+              </p>
+              <!-- circular bar -->
+              <div class="circular">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="bas">
+              <span>87% Donated</span>
+              <span>$6.5987% Goals</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="top">
+              <img
+                src="./assets/images/img_card2.png"
+                alt="image d'illustration"
+              />
+              <div class="etiquette">
+                <span>Education</span>
+              </div>
+            </div>
+            <div class="centre" aria-describedby="description">
+              <h3>Diagnostic de detection précoce</h3>
+              <p>
+                Please help us expand our services to reachour diverse
+                communities and perdons of allabilities with.
+              </p>
+              <!-- Circular bar -->
+              <div class="circular">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="bas">
+              <span>87% Donated</span>
+              <span>$6.5987% Goals</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="top">
+              <img
+                src="./assets/images/img_card3.png"
+                alt="image d'illustration"
+              />
+              <div class="etiquette">
+                <span>Education</span>
+              </div>
+            </div>
+            <div class="centre" aria-describedby="description">
+              <h3>Diagnostic de detection précoce</h3>
+              <p>
+                Please help us expand our services to reachour diverse
+                communities and perdons of allabilities with.
+              </p>
+              <!-- Circular bar -->
+              <div class="circular">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="bas">
+              <span>87% Donated</span>
+              <span>$6.5987% Goals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bas de cette section -->
+        <p class="p-caree">
+          We work creatively and specially for our client
+          <a href="#">Check Our Work</a>
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section quatre">
+        <div class="titre-g">
+          <div>
+            <i class="bi bi-heart-fill"></i>
+            <span> Levez vos mains pour aider </span>
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h1 class="my-titre">Voir nos derniers événements</h1>
+        </div>
+
+        <!-- Container cards -->
+        <div class="container-cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="droit">
+              <img
+                src="./assets/images/evenement1.png"
+                alt="image d'evenement"
+              />
+            </div>
+            <div class="gauche">
+              <p class="my-paragraph" role="description de l'evenement">
+                Visite à l'orphelinat Elisabeth Kiaz : remise de kit scolaire,
+                déparasi- tage systématique, dépistage du paludisme et de la
+                malnutrition chez 25 enfants.
+              </p>
+              <div class="autre">
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span aria-describedby="lieu de l'evenement"
+                    >Lieu : Pointe noire</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-alarm"></i>
+                  <span aria-describedby="date de l'evenement"
+                    >Date : 14 Avril 2022</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn-details"
+                  role="voir plus de details"
+                >
+                  Plus de details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="droit">
+              <img
+                src="./assets/images/evenement2.png"
+                alt="image d'evenement"
+              />
+            </div>
+            <div class="gauche">
+              <p class="my-paragraph" role="description de l'evenement">
+                Activité rentrée pour tous: remise des kits scolaires à 70
+                enfants atteints de la drépanocytose.
+              </p>
+              <div class="autre">
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span aria-describedby="lieu de l'evenement"
+                    >Lieu : Pointe noire</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-alarm"></i>
+                  <span aria-describedby="date de l'evenement"
+                    >Date : 24 Septembre 2023</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn-details"
+                  role="voir plus de details"
+                >
+                  Plus de details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="droit">
+              <img
+                src="./assets/images/evenement3.png"
+                alt="image d'evenement"
+              />
+            </div>
+            <div class="gauche">
+              <p class="my-paragraph" role="description de l'evenement">
+                Journée mondiale de l'alimentation : sensibilisation sur la
+                diversification alimentaire aux femmes allaitantes au centre
+                intégré de MVOUMVOU.
+              </p>
+              <div class="autre">
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span aria-describedby="lieu de l'evenement"
+                    >Lieu : Pointe noire</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-alarm"></i>
+                  <span aria-describedby="date de l'evenement"
+                    >Date : 16 Octombre 2023</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn-details"
+                  role="voir plus de details"
+                >
+                  Plus de details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="droit">
+              <img
+                src="./assets/images/evenement4.png"
+                alt="image d'evenement"
+              />
+            </div>
+            <div class="gauche">
+              <p class="my-paragraph" role="description de l'evenement">
+                Activité rentrée pour tous : remise de fournitures scolaires aux
+                enfants de l'orphelinat Père Anton.
+              </p>
+              <div class="autre">
+                <div>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span aria-describedby="lieu de l'evenement"
+                    >Lieu : Pointe noire</span
+                  >
+                </div>
+                <div>
+                  <i class="bi bi-alarm"></i>
+                  <span aria-describedby="date de l'evenement"
+                    >Date : 30 Septembre 2023</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn-details"
+                  role="voir plus de details"
+                >
+                  Plus de details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section cinq">
+        <video
+          src="./assets/images/#"
+          controls
+          autoplay
+          loop
+          width="100%"
+          style="height: 90vh"
+        ></video>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section six">
+        <div class="titre-g">
+          <div>
+            <i class="bi bi-heart-fill"></i>
+            <span> Raising your Helping hands </span>
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h1 class="my-titre">You Provide Care & Love</h1>
+        </div>
+
+        <!-- Container Cards -->
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="droit">
+              <i class="bi bi-quote"></i>
+              <span class="my-paragraph"
+                >Amazing Template is a responsive wordpresse theme with a modern
+                design that is perfect for building any kind of website,
+                Charitable efforts can take many form, incliding monetary.
+              </span>
+              <h1>Rosalina D.William</h1>
+            </div>
+            <div class="gauche">
+              <!-- Les deux cercles sur le coté -->
+              <span class="inter"></span>
+              <span class="couvert"></span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="droit">
+              <i class="bi bi-quote"></i>
+              <span class="my-paragraph"
+                >Amazing Template is a responsive wordpresse theme with a modern
+                design that is perfect for building any kind of website,
+                Charitable efforts can take many form, incliding monetary.
+              </span>
+              <h1>Rosalina D.William</h1>
+            </div>
+            <div class="gauche">
+              <!-- Les deux cercles sur le coté -->
+              <span class="inter"></span>
+              <span class="couvert"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7 -->
+      <section>
+      <div class="section sept">
+      <div class="container">
+        <div class="droit">
+          <div class="titre-g cote">
+          <div>
+            <i class="bi bi-heart-fill"></i>
+            <span class="blanc"> Raising Your Helping Hands </span>
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h1 class="my-titre blanc">Join your hand with us for a better life and fut</h1>
+          <p class="my-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, maxime sint numquam in minus facilis animi est ipsa deleniti odit eligendi, cupiditate repellat. Praesentium commodi aspernatur expedita obcaecati. Quae, reiciendis.</p>
+          <div class="bas">
+            <i class="bi bi-telephone-plus"></i>
+            <div class="contact">
+              <span>Contactez-nous 24 / 7</span>
+              <span>+242 06 766 44 59</span>
+            </div>
+            <div>
+              <button type="button" class="btn-primary">
+              Faire un Don maintenant<i class="bi bi-arrow-right-short"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gauche">
+        <div class="container-form">
+          <h1>Interested Dicussing</h1>
+          <div class="inputs">
+            <input type="number" name="montant" placeholder="Entrez le montant">
+            <input type="text" name="nom" placeholder="Entrez le nom">
+            <input type="email" name="email" placeholder="Entrez l'email">
+            <input type="number" name="numero" placeholder="Entrez le numéro">
+            <input type="text" name="message" placeholder="Taper votre message" id="message">
+            <button type="submit">Envoyez le message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bande -->
+    <div class="bande"></div>
+  </section>
+
+      <!-- Section 8 -->
+      <section class="section huit" id="apropos">
+        <div class="container">
+          <div class="droit">
+            <img src="./assets/images/apropos.png" alt="image" />
+          </div>
+          <div class="gauche">
+            <div class="titre-g cote">
+              <div>
+                <i class="bi bi-heart-fill"></i>
+                <span> Association pour enfants </span>
+                <i class="bi bi-heart-fill"></i>
+              </div>
+              <h1 class="my-titre">À propos de nous</h1>
+            </div>
+
+            <p class="my-paragraph">
+              La malnutrition est une réalité préoccupante, mais nous
+              croyonsqu'elle est évitable. Notre association s'engage à lutter
+              contre la malnutrition infantile en fournissant une alimentation
+              adéquate,des conseils nutritionnels et des programmes éducatifs
+              aux familles dans le besoin.
+            </p>
+            <button type="button" class="btn-primary">
+              Faire un Don maintenant<i class="bi bi-arrow-right-short"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br /><br />
+
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+    <!-- *****************************************  -->
+
+    <!-- Debut du Footer -->
+    <footer>
+      <p>
+        Copyright &copy;
+        <a href="http://possacode.lepresk.com">PossaCode</a> Tout droit reservés
+      </p>
+      <div class="reseaux">
+        <a href="http://">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="http://">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="http://">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="http://">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Debut du Js -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
