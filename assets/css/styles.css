@@ -1,11 +1,4 @@
-/*|#MakVie-SAinte|*/
-
-/*-----------------------------------*\
-  #VARIABLE CSS
-\*-----------------------------------*/
-
 :root {
-
   /* coleurs */
 
   --couleur-primaire: #d78c00;
@@ -19,14 +12,14 @@
   --couleur-blanche: #ffffff;
   --couleur-lumier: #f1f6f7;
   --couleur-sombre: #00020c;
-  --couleur-sombre-100: #273E47;
+  --couleur-sombre-100: #273e47;
 
   --couleur-gris: #63717d;
   --couleur-gris-100: #434d57;
 
   /* typographie */
 
-  --police-primaire: "titillium web";
+  /* --police-primaire: "titillium web"; */
   --police-secondaire: "poppins";
 
   --fs-1: 1.563rem;
@@ -89,7 +82,7 @@ li {
 html {
   font-size: 100%;
   font-weight: var(--weight-400);
-  font-family: "poppins", sans-serif, system-ui !important;
+  font-family: "Poppins", sans-serif, system-ui !important;
   overscroll-behavior: contain;
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -105,10 +98,6 @@ body {
   background-color: var(--couleur-primaire);
   color: var(--couleur-blanche);
 }
-
-/*-----------------------------------*\
-  #OVERLAY
-\*-----------------------------------*/
 
 .overlay {
   position: fixed;
@@ -127,12 +116,6 @@ body {
   opacity: 1;
   pointer-events: all;
 }
-
-/*-----------------------------------*\
-  #COMPOSANTS GENERAL
-\*-----------------------------------*/
-
-/* Bouton primaire */
 
 button.btn-primary {
   text-align: center;
@@ -158,8 +141,6 @@ button.btn-primary:focus {
   outline: blue;
 }
 
-/* Bouton secondaire */
-
 button.btn-secondary {
   text-align: center;
   font-size: var(--fs-6);
@@ -180,9 +161,6 @@ button.btn-secondary:hover {
   border-color: var(--couleur-blanche);
 }
 
-
-/* Titre Haut des sections */
-
 .titre-g {
   width: 100%;
   height: auto;
@@ -190,7 +168,6 @@ button.btn-secondary:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: darkturquoise; */
 }
 
 .titre-g.cote {
@@ -240,8 +217,6 @@ button.btn-secondary:hover {
   text-align: left;
 }
 
-/* Les Titres des Sections */
-
 .my-titre {
   line-height: 1.1;
   color: var(--couleur-sombre-100);
@@ -249,9 +224,6 @@ button.btn-secondary:hover {
   font-family: var(--police-primaire);
   margin-bottom: 18px;
 }
-
-
-/* Paragraph */
 
 .my-paragraph {
   line-height: 1.6;
@@ -262,10 +234,6 @@ button.btn-secondary:hover {
   margin-bottom: 28px;
 }
 
-/* Section general */
-
 section.section {
   padding: 90px 10px;
 }
-
-/* 925DEV */

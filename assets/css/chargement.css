@@ -1,77 +1,73 @@
-/*-----------------------------------*\
-  #EFFET CHARGEMENT PAGE
-\*-----------------------------------*/
-
 .chargement-container {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    transform: translate(0%, 0%);
-    width: 100%;
-    height: 100vh !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--couleur-blanche);
-    padding-bottom: 100px;
-    z-index: 280;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--couleur-blanche);
+  padding-bottom: 100px;
+  z-index: 280;
 }
 
 .load-wrapp {
-    float: left;
-    width: max-content;
-    height: max-content;
-    padding: 30px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: transparent;
-    z-index: 290;
+  float: left;
+  width: max-content;
+  height: max-content;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+  z-index: 290;
 }
 
 .ring-2 {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    border: 5px solid var(--couleur-primaire);
-    border-radius: 100%;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 5px solid var(--couleur-primaire);
+  border-radius: 100%;
 }
 
 .ball-holder {
-    position: absolute;
-    width: 12px;
-    height: 45px;
-    left: 17px;
-    top: 0px;
+  position: absolute;
+  width: 12px;
+  height: 45px;
+  left: 17px;
+  top: 0px;
 }
 
 .ball {
-    position: absolute;
-    top: -11px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    background: var(--couleur-secondaire);
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: var(--couleur-secondaire);
 }
 
 .load-5 p {
-    font-family: var(--police-primaire);
-    font-weight: var(--weight-600);
-    font-size: var(--fs-4);
-    color: var(--couleur-secondaire);
+  font-family: var(--police-primaire);
+  font-weight: var(--weight-600);
+  font-size: var(--fs-4);
+  color: var(--couleur-secondaire);
 }
 
 .load-5 .ball-holder {
-    animation: loadingE 1s linear infinite;
+  animation: loadingE 1s linear infinite;
 }
 
 @keyframes loadingE {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }

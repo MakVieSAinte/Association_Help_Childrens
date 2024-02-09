@@ -1,10 +1,4 @@
-/*|#MakVie-SAinte|*/
-
-@import url('styles.css');
-
-/*-----------------------------------*\
-  #SECTION 1
-\*-----------------------------------*/
+@import url("styles.css");
 
 .section.un {
   width: 100%;
@@ -12,6 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .section.un .card {
@@ -22,7 +17,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--couleur-blanche);
-  box-shadow: 0px -1px 7px #cfcfcf;
+  box-shadow: 0px 0px 5px rgba(207, 207, 207, 0.623);
   text-align: center;
   padding: 25px 5px 10px;
   margin: 2px;
@@ -41,10 +36,6 @@
   color: var(--couleur-gris);
   font-size: var(--fs-7);
 }
-
-/*-----------------------------------*\
-  #SECTION 2
-\*-----------------------------------*/
 
 .section.deux {
   width: 100% !important;
@@ -68,12 +59,10 @@
   width: 100% !important;
 }
 
-.section.deux .bloc-bas-link {
-  display: flex;
-  align-items: start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
+.section.deux .bloc-bas-link ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
   margin-bottom: 40px;
 }
 
@@ -88,15 +77,11 @@
 
 .section.deux .bloc-bas-link ul li span {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: var(--couleur-primaire);
   margin-right: 5px;
 }
-
-/*-----------------------------------*\
-  #SECTION 3
-\*-----------------------------------*/
 
 .section.trois {
   width: 100%;
@@ -141,7 +126,7 @@
   bottom: -17px;
   width: max-content;
   color: var(--couleur-blanche);
-  font-family: var(--police-primaire);
+  font-family: var(--police-primaire, "Poppins" sans-serif);
   font-weight: var(--weight-900);
   background-color: var(--couleur-primaire);
   padding: 6px 20px;
@@ -161,7 +146,7 @@
 .section.trois .card .centre p {
   color: var(--couleur-gris-100);
   font-size: var(--fs-5);
-  font-family: var(--police-secondaire);
+
   font-weight: var(--weight-500);
   padding-bottom: 15px;
 }
@@ -177,11 +162,13 @@
   position: relative;
   width: 150px;
   height: 10px;
-  background: conic-gradient(from 0deg,
-      var(--couleur-primaire) 0%,
-      var(--couleur-primaire) 0% 95%,
-      #333 95%,
-      #333 100%);
+  background: conic-gradient(
+    from 0deg,
+    var(--couleur-primaire) 0%,
+    var(--couleur-primaire) 0% 95%,
+    #333 95%,
+    #333 100%
+  );
 }
 
 .section.trois .card .bas {
@@ -204,10 +191,6 @@
   color: var(--couleur-primaire);
   text-decoration: underline;
 }
-
-/*-----------------------------------*\
-  #SECTION 4
-\*-----------------------------------*/
 
 .section.quatre {
   width: 100%;
@@ -306,18 +289,6 @@
   border-color: var(--couleur-primaire-200);
 }
 
-
-/*-----------------------------------*\
-  #SECTION 5
-\*-----------------------------------*/
-
-/* Section pour la Video */
-
-
-/*-----------------------------------*\
-  #SECTION 6
-\*-----------------------------------*/
-
 .section.six {
   width: 100%;
   display: flex;
@@ -325,6 +296,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  gap: 20px;
 }
 
 .section.six .cards {
@@ -402,11 +374,6 @@
   border-radius: 50%;
 }
 
-
-/*-----------------------------------*\
-  #SECTION 7
-\*-----------------------------------*/
-
 .section.sept {
   width: 100%;
   height: auto;
@@ -422,7 +389,12 @@
   display: flex;
   align-items: start;
   justify-content: center;
-  background-image: url('../images/contact.png');
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.1) 95%
+    ),
+    url("../images/contact.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -570,10 +542,6 @@
   background-color: var(--couleur-primaire);
 }
 
-/*-----------------------------------*\
-  #SECTION 8
-\*-----------------------------------*/
-
 .section.huit .container {
   display: flex;
   align-items: center;
@@ -594,5 +562,3 @@
 .section.huit .container .droit img {
   width: 100%;
 }
-
-/* 925DEV */

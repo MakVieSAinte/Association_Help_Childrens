@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr" translate="yes">
   <head>
-    <!-- ==== Meta données ==== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="robots" content="INDEX, FOLLOW" />
-    <!-- ==== Theme couleur ==== -->
     <meta name="theme-color" content="#c9870c" />
     <meta name="msapplication-TileColor" content="#c9870c" />
-    <!-- ==== Meta ogg pour le partage ==== -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="ASSOCIATION D'AIDE AUX ENFANTS" />
     <meta property="og:image" content="./assets/images/accueil.png" />
     <meta property="og:title" content="ASSOCIATION HELP CHILDREN's" />
+    <meta property="og:site_name" content="ASSOCIATION HELP CHILDREN's" />
+
+    <!-- TODO: Add a canonical url -->
+    <meta property="og:url" content="https://help-childrens." />
+
     <meta
       property="og:description"
       content="La malnutrition est une réalité préoccupante, mais nous croyons qu'elle est évitable. Notre association s'engage à lutter contre la malnutrition infantile en fournissant une alimentation adéquate,des conseils nutritionnels et des programmes éducatifs aux familles dans le besoin"
     />
-    <!-- ==== Titre de la page ==== -->
     <title>HELP CHILDREN'S | Faire un don pour aidez les enfants.</title>
-    <!-- ==== Favicon du site web ==== -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -70,19 +70,16 @@
       href="./assets/import/icones/bootstrap-icons.css"
       crossorigin
     />
-    <!-- ==== Css fichier (non minifier) ==== -->
+
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/chargement.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/header.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/sections.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
-    <!-- ==== Css fichier (minifier) ==== -->
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css.min.css"> -->
   </head>
 
   <body>
-    <!-- Chargement du site web -->
     <div class="chargement-container">
       <div class="load-wrapp">
         <div class="load-5">
@@ -96,12 +93,12 @@
         </div>
       </div>
     </div>
-    <!-- Script pour le chargement de la page -->
+
     <script>
       const containerChargement = document.querySelector(
         ".chargement-container"
       );
-      window.addEventListener("load", (e) => {
+      window.addEventListener("load", () => {
         containerChargement.remove();
       });
     </script>
@@ -109,13 +106,8 @@
     <!-- Overlay -->
     <div class="overlay"></div>
 
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
-
-    <!-- Debut du Header -->
+  
     <header>
-      <!-- Top Header -->
       <div class="top-header">
         <div class="bloc adresse">
           <i class="bi bi-geo-alt-fill"></i>
@@ -127,7 +119,6 @@
           </div>
         </div>
 
-        <!-- Bloc du millieu -->
         <div class="bloc">
           <i class="bi bi-envelope-open-fill"></i>
           <div class="bloc-txt">
@@ -139,7 +130,6 @@
           </div>
         </div>
 
-        <!-- Bloc reseaux -->
         <div class="bloc reseaux">
           <div class="bloc-txt">
             <span>Suivez-nous : </span>
@@ -159,7 +149,6 @@
         </div>
       </div>
 
-      <!-- Navigation Desktop -->
       <div class="navigation-desktop">
         <nav class="desktop">
           <a href="./index.html">
@@ -170,7 +159,6 @@
             />
           </a>
 
-          <!-- Lien de navigation -->
           <div class="bloc lien">
             <div class="lien-nav">
               <a href="./index.html" aria-current="page">Accueil</a>
@@ -194,7 +182,6 @@
         </nav>
       </div>
 
-      <!-- Navigation Phone -->
       <div class="navigation-phone">
         <nav class="phone">
           <a href="index.html">
@@ -227,7 +214,6 @@
         </nav>
       </div>
 
-      <!-- Container image accueil -->
       <div class="container-img-accueil">
         <div class="style-pres-txt">
           <div class="haut-titre s-header">
@@ -255,15 +241,9 @@
       </div>
     </header>
 
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
 
-    <!-- Debut du Main -->
     <main aria-describedby="contenue principale de la page">
-      <!-- Section 1 -->
       <section class="section un">
-        <!-- Card 1 -->
         <div class="card">
           <img src="./assets/images/icone_1.png" alt="icone d'illustration" />
           <h3>Education pour enfants</h3>
@@ -272,7 +252,6 @@
           </p>
         </div>
 
-        <!-- Card 2 -->
         <div class="card">
           <img src="./assets/images/icone_2.png" alt="icone d'illustration" />
           <h3>Insertion sociale</h3>
@@ -325,8 +304,6 @@
               <li><span></span>Faire une santé de qualité</li>
               <li><span></span>Assistance aux enfants</li>
               <li><span></span>Éducation à la santé</li>
-            </ul>
-            <ul>
               <li><span></span>Sensibilisation</li>
               <li><span></span>Soutien nutritionnel</li>
               <li><span></span>Insertion sociale</li>
@@ -618,7 +595,7 @@
           autoplay
           loop
           width="100%"
-          style="height: 90vh"
+          height="100%"
         ></video>
       </section>
 
@@ -749,13 +726,8 @@
         </div>
       </section>
     </main>
-    <br /><br />
 
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
-    <!-- *****************************************  -->
 
-    <!-- Debut du Footer -->
     <footer>
       <p>
         Copyright &copy;
